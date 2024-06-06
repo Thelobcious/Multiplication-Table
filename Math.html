@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(17, 17, 17);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .navbar ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar ul li {
+            font: black;
+            position: relative;
+        }
+        
+        .navbar ul li a {
+            display: block;
+            padding: 50px 25px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: color 1s;
+        }
+        
+        .navbar ul li:hover {
+            background-color: rgba(107, 91, 91, 0.13);
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 10fr);
+            grid-gap: 30px;
+            position: absolute;
+            top: 50%; 
+            left: 10px; 
+            transform: translate(-5%, -40%); 
+        }
+        
+        .image-grid a img {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            background-image: url("BackgroundMath.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 50px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="Math.html"><span class="title">Home</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-grid">
+        <a href="Number1slideshow.html"><img src="Number1.png" alt="Number1"></a>
+        <a href="Number2slideshow.html"><img src="Number2.png" alt="Number2"></a>
+        <a href="Number3slideshow.html"><img src="Number3.png" alt="Number3"></a>
+        <a href="Number4slideshow.html"><img src="Number4.png" alt="Number4"></a>
+        <a href="Number5slideshow.html"><img src="Number5.png" alt="Number5"></a>
+        <a href="Number6slideshow.html"><img src="Number6.png" alt="Number6"></a>
+        <a href="Number7slideshow.html"><img src="Number7.png" alt="Number7"></a>
+        <a href="Number8slideshow.html"><img src="Number8.png" alt="Number8"></a>
+        <a href="Number9slideshow.html"><img src="Number9.png" alt="Number9"></a>
+        <a href="Number10slideshow.html"><img src="Number10.png" alt="Number10"></a>
+    </div>
+</body>
+</html>
